@@ -3,12 +3,12 @@
 # Logs
 
 # local sources
-/src
+src/
 
 # local tests
-/tests
+tests/
 
 # chrome web store
-/chromewebstore
+chromewebstore/
 
 

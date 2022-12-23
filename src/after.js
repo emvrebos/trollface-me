@@ -30,7 +30,7 @@
     //DIST REMOVE: wrapper.innerHTML = "";
 
     const img = document.createElement("img");
-    img.setAttribute("src", "D:\\apprentissage\\chrome extension\\trollface-me\\src\\assets\\trollface.svg"); // DIST CHANGE : use relative path "assets/trollface.svg";
+    img.setAttribute("src", "..\\src\\assets\\trollface.svg"); // DIST CHANGE : use relative path "assets/trollface.svg";
     img.style.position = "absolute"
     img.style.top = "0px";
     img.style.left = "0px";
@@ -87,7 +87,7 @@
 
   function randomInterval() {
     let min = 1;
-    let max = 45; // min and max interval parameters in seconds
+    let max = 3; // min and max interval parameters in seconds
     myInterval = (Math.floor(Math.random() * (max - min + 1) + min)) * 1000;
     return myInterval
   }
@@ -103,7 +103,7 @@
       console.log("Now you don't :-/");//DIST REMOVE
       myInterval = randomInterval();
       showHide = setInterval(show, myInterval);
-    }, 500);
+    }, 5000);
   }
 
   // main

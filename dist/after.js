@@ -13,22 +13,23 @@
   //Creates the Trollface Me extension content
   function createTrollOverlay() {
     console.log('... Activating Troll Me extension');
+
     const wrapper = document.createElement("div");
     wrapper.style.width = "100%";
     wrapper.style.height = "100%";
     wrapper.style.margin = "0%";
     wrapper.style.padding = "0%";
     wrapper.style.zIndex = "100";
-    wrapper.style.position = "absolute"
+    wrapper.style.position = "fixed"
     wrapper.style.display = "none";
     wrapper.setAttribute("id", "trollface-extension-wrapper");
 
     const img = document.createElement("img");
     img.setAttribute("src", "assets/trollface.svg");
     //img.setAttribute("src", "assets/trollface.svg");
-    img.style.position = "absolute"
-    img.style.top = "0px";
-    img.style.left = "0px";
+    img.style.position = "fixed"
+    img.style.top = "12.5%";
+    img.style.left = "12.5%";
     img.style.zIndex = "100";
     img.style.width = "75%";
     img.style.height = "75%";
@@ -38,9 +39,9 @@
     img.setAttribute("id", "trollface-extension-image")
 
     const overlay = document.createElement("div");
-    wrapper.style.position = "absolute"
-    overlay.style.top = "0px";
-    overlay.style.left = "0px";
+    wrapper.style.position = "fixed"
+    overlay.style.top = "12.5%";
+    overlay.style.left = "12.5%";
     overlay.style.zIndex = "100";
     overlay.style.width = "100%";
     overlay.style.height = "100%";

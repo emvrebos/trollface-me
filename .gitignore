@@ -1,2 +1,14 @@
 # Artifacts
+
 # Logs
+
+# local sources
+/src
+
+# local tests
+/tests
+
+# chrome web store
+/chromewebstore
+
+

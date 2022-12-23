@@ -22,7 +22,7 @@
     wrapper.style.margin = "0%";
     wrapper.style.padding = "0%";
     wrapper.style.zIndex = "100";
-    wrapper.style.position = "absolute"
+    wrapper.style.position = "fixed"
     wrapper.style.display = "none";
     wrapper.setAttribute("id", "trollface-extension-wrapper");
     //DIST REMOVE: wrapper.style.backgroundColor = "transparent";
@@ -31,9 +31,9 @@
 
     const img = document.createElement("img");
     img.setAttribute("src", "..\\src\\assets\\trollface.svg"); // DIST CHANGE : use relative path "assets/trollface.svg";
-    img.style.position = "absolute"
-    img.style.top = "0px";
-    img.style.left = "0px";
+    img.style.position = "fixed"
+    img.style.top = "12.5%";
+    img.style.left = "12.5%";
     img.style.zIndex = "100";
     img.style.width = "75%";
     img.style.height = "75%";
@@ -44,9 +44,9 @@
     //DIST REMOVE: console.log("image const ok")
 
     const overlay = document.createElement("div");
-    wrapper.style.position = "absolute"
-    overlay.style.top = "0px";
-    overlay.style.left = "0px";
+    wrapper.style.position = "fixed"
+    overlay.style.top = "12.5%";
+    overlay.style.left = "12.5%";
     overlay.style.zIndex = "100";
     overlay.style.width = "100%";
     overlay.style.height = "100%";
@@ -57,6 +57,7 @@
     //DIST REMOVE:console.log("overlay const ok")
 
     // inject the Trollface Me content into the page
+    //document.body.style.position = "relative"; // recommended in some tutorial in order to make the floating of child div work. not usefull during my tests.
     document.body.prepend(wrapper);
     document.getElementById("trollface-extension-wrapper").append(img);
     document.getElementById("trollface-extension-wrapper").append(overlay);

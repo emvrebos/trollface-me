@@ -6,7 +6,7 @@ Extension made for self-develpment / tesing the hobby.
 
 ## What it does
 
-Prank your no colleagues and friends, drive them crazy by displaying a troll from time to time during their web browsing.
+Prank your entourage, drive them crazy by displaying a troll from time to time during their web browsing.
 
 # Project configuration
 

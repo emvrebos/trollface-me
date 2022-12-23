@@ -6,7 +6,7 @@
 src/
 
 # local tests
-tests/
+test/
 
 # chrome web store
 chromewebstore/

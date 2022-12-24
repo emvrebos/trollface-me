@@ -6,7 +6,7 @@ Extension made for self-develpment / tesing the hobby.
 
 ## What it does
 
-Play a trick on your acquaintances, drive them crazy by displaying sometimes a quick but huge trollface while they surf the Internet.
+Play a trick to your peoples, drive them crazy by displaying sometimes a quick but huge trollface while they surf the Internet.
 
 ## Project configuration
 

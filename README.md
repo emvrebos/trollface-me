@@ -10,11 +10,13 @@ Prank your entourage, drive them crazy by displaying a troll from time to time d
 
 # Project configuration
 
-Global Configuration (i.e. being out of the dist/src/test folders) comes from the following TypeScript React boilerplate using the Rollup module bundler:
-https://github.com/extend-chrome/ts-react-boilerplate
-https://rollupjs.org/guide/en/
-
-And the boilerplate used comes mostly from:
+Setup comes from the following boilerplate:
 https://github.com/llagerlof/fresh-chrome-extension
 
-It was not fully configured and used for the moment in this project since I dont use typescript or react framework
+### Ideas of improvement
+
+1.  **Efficiency:** Use the chrome.tabs API in order to run only on the active tab
+
+2.  **Fun:** Add random variations to the Trollface ( e.g.: sunglasses, bonnet,etc. )
+
+3.  **Options for the pranker** Add a configuration page in the popup containing custom delay etc

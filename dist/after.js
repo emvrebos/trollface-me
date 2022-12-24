@@ -42,7 +42,7 @@
     wrapper.style.position = "fixed"
     overlay.style.top = "12.5%";
     overlay.style.left = "12.5%";
-    overlay.style.zIndex = "100";
+    overlay.style.zIndex = "10000";
     overlay.style.width = "100%";
     overlay.style.height = "100%";
     overlay.style.margin = "0%";

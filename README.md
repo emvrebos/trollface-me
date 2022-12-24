@@ -6,8 +6,7 @@ Extension made for self-develpment / tesing the hobby.
 
 ## What it does
 
-EN: Play a trick on your acquaintances, drive them crazy by displaying a trollface from time to time while they surf the Interet.
-FR: Jouez un tour à vos connaissances, rendez-les folles en affichant de temps en temps un visage de troll pendant qu'elles surfent sur Internet.
+Play a trick on your acquaintances, drive them crazy by displaying a quick but huge trollface from time to time while they surf the Internet.
 
 ## Project configuration
 

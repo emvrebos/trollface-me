@@ -12,6 +12,12 @@
       "128": "icons/icon-48.png"
     }
   },
+  "web_accessible_resources": [
+    {
+      "resources": [ "assets/trollface.svg"],
+      "matches": [ "<all_urls>" ]
+    }
+  ],
   "content_scripts": [
     {
       "run_at": "document_idle",
@@ -19,8 +25,7 @@
         "after.js"
       ],
       "matches": [
-        "https://*/*",
-        "http://*/*"
+        "<all_urls>"
       ]
     }
   ],

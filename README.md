@@ -8,12 +8,12 @@ Extension made for self-develpment / tesing the hobby.
 
 Prank your entourage, drive them crazy by displaying a troll from time to time during their web browsing on the Chrome Web Browser.
 
-# Project configuration
+## Project configuration
 
 Setup comes from the following boilerplate:
 https://github.com/llagerlof/fresh-chrome-extension
 
-### Ideas of improvement
+## Ideas of improvement
 
 1.  **Efficiency:** Use the chrome.tabs API in order to run only on the active tab
 

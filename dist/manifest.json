@@ -1,6 +1,6 @@
 {
   "name": "Trollface Me Chrome Extension",
-  "description": "Prank your entourage, drive them crazy by displaying a trollface from time to time during their web browsing.",
+  "description": "Play a trick on your acquaintances, drive them crazy by displaying a troll face in their web browser from time to time while they surf the Internet.",
   "homepage_url": "https://github.com/emvrebos",
   "version": "1.0.0",
   "manifest_version": 3,
@@ -28,7 +28,6 @@
     "service_worker": "background.js"
   },
   "permissions": [
-    "scripting"
   ],
   "host_permissions": [
     "https://*/*",

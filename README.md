@@ -6,7 +6,8 @@ Extension made for self-develpment / tesing the hobby.
 
 ## What it does
 
-Prank your entourage, drive them crazy by displaying a troll from time to time during their web browsing on the Chrome Web Browser.
+EN: Play a trick on your acquaintances, drive them crazy by displaying a troll face in their web browser from time to time while they surf the Internet.
+FR: Jouez un tour à vos connaissances, rendez-les folles en affichant de temps en temps un visage de troll dans leur navigateur web pendant qu'elles surfent sur Internet.
 
 ## Project configuration
 

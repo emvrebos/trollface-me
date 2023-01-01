@@ -1,5 +1,21 @@
-// this code will be executed after page load
 (function () {
+
+  //DIST REMOVE: get a formatted timestamp
+  function logDate() {
+    let today = new Date();
+    let ss = today.getSeconds();
+    ss = ("0" + ss).slice(-2);
+    let mi = today.getMinutes();
+    mi = ("0" + ss).slice(-2);
+    let hh = today.getHours();
+    hh = ("0" + ss).slice(-2);
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+
+    today = yyyy + '-' + mm + '-' + dd + '-' + hh + '-' + mm + '-' + ss;
+    return today;
+  }
 
   //Verifies that the Troll Me content is still on top in case of other dynamic scripts running in the page
   function checkIfTrollFaceMeIsOnTop() {
@@ -12,7 +28,7 @@
 
   //Creates the Trollface Me extension content
   function createTrollOverlay() {
-    console.log('... Activating Troll Me extension');
+    console.log('Trollface Me extension: content activation...');
 
     const wrapper = document.createElement("div");
     wrapper.style.width = "100%";
@@ -53,10 +69,9 @@
 
   }
 
-
   function randomInterval() {
     let min = 1;
-    let max = 15; // min and max interval parameters in seconds
+    let max = 10; // min and max interval parameters in seconds
     myInterval = (Math.floor(Math.random() * (max - min + 1) + min)) * 1000;
     return myInterval
   }
@@ -66,16 +81,26 @@
     clearInterval(showHide);
     checkIfTrollFaceMeIsOnTop();
     document.getElementById("trollface-extension-wrapper").style.display = "block";
+    console.log('showing trollface' + logDate());
     setTimeout(function () {
       document.getElementById("trollface-extension-wrapper").style.display = "none";
-      myInterval = randomInterval();
-      showHide = setInterval(show, myInterval);
+      showHide = setInterval(show, randomInterval());
     }, 250);
   }
 
   // main
-  createTrollOverlay();
-  let myInterval = 0;
-  setTimeout(function () { showHide = setInterval(show, myInterval); }, randomInterval());
+  function stopTFM(){
+  const trollFaceMeContent = document.getElementById("trollface-extension-wrapper");
+  if (trollFaceMeContent) {
+    trollFaceMeContent.remove();
+    console.log('... Trollface Me extension: content removed from startTFM');
+  }
+  if (showHide) {
+    clearInterval(showHide);
+    console.log('... Trollface Me extension: interval removed from startTFM');
+  }}
 
+  stopTFM();
+  createTrollOverlay();
+  showHide = setInterval(show, randomInterval());
 })();

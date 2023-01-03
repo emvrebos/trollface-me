@@ -68,14 +68,12 @@
     document.getElementById("trollface-extension-wrapper").style.display = "block";
     setTimeout(function () {
       document.getElementById("trollface-extension-wrapper").style.display = "none";
-      myInterval = randomInterval();
-      showHide = setInterval(show, myInterval);
+      showHide = setInterval(show, randomInterval());
     }, 250);
   }
 
-  // main
+  // main run
   createTrollOverlay();
-  let myInterval = 0;
-  setTimeout(function () { showHide = setInterval(show, myInterval); }, randomInterval());
+  showHide = setInterval(show, randomInterval());
 
 })();

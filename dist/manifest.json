@@ -18,15 +18,18 @@
       "matches": [ "<all_urls>" ]
     }
   ],
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "js": [
+        "after.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
   "background": {
     "service_worker": "background.js"
-  },
-  "host_permissions": [
-    "<all_urls>"
-  ],
-  "permissions": [
-    "activeTab",
-    "scripting",
-    "tabs"
-  ]
+  }
 }
